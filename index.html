@@ -2,10 +2,31 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Topitoff by getsetbro</title>
+    <title>TopItOff by getsetbro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  a {
+  display: inline-block;
+  color: #cde;
+  border: 2px solid #789;
+  background: #456;
+  font-size: 150%;
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem
+}
+</style>
   </head>
   <body>
-    
+  <h1>TopItOff by getsetbro</h1>
+  <p>TopItOff is a bookmarklet that will take down the popups that get in your way. For when a site puts a modal in front of the content you want.</p>
+  <p>Here is the bookmarklet - drag it to your bookmarks toolbar:</p>
+  <p>
+    <a href='javascript:(function(e,a,g,h,f,c,b,d)%7Bif(!(f%3De.jQuery)%7C%7Cg>f.fn.jquery%7C%7Ch(f))%7Bc%3Da.createElement("script")%3Bc.type%3D"text/javascript"%3Bc.src%3D"//ajax.googleapis.com/ajax/libs/jquery/"%2Bg%2B"/jquery.min.js"%3Bc.onload%3Dc.onreadystatechange%3Dfunction()%7Bif(!b%26%26(!(d%3Dthis.readyState)%7C%7Cd%3D%3D"loaded"%7C%7Cd%3D%3D"complete"))%7Bh((f%3De.jQuery).noConflict(1),b%3D1)%3Bf(c).remove()%7D%7D%3Ba.documentElement.childNodes%5B0%5D.appendChild(c)%7D%7D)(window,document,"1.9.1",function(%24,L)%7Bvar zz%3D0,ee%3B%24("body *").each(function()%7Bvar e%3DparseInt(%24(this).css("z-index"))%3Bif(e>zz)%7Bzz%3De%3Bee%3D%24(this)%3B%7D%7D)%3Bif(ee)%7Bee.remove()%3B%7D%7D)%3B'>TopIt</a>
+  </p>
+  <p style="position:relative;z-index:999">
+    This paragraph will be removed if you try the bookmarklet
+  </p>
   </body>
 </html>
